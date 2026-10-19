@@ -2,7 +2,7 @@
 
 Projeto de portfólio de QA voltado ao planejamento e à documentação de testes funcionais para um e-commerce. O escopo inicial contempla duas histórias de usuário: cadastro de usuário e login.
 
-> **Status do projeto:** planejamento e documentação concluídos para o escopo inicial. Os casos de teste foram cadastrados, mas ainda não foram executados. Portanto, este repositório não apresenta resultados de aprovação/reprovação nem afirma que os comportamentos foram validados em uma aplicação real.
+> **Status do projeto:** planejamento e documentação concluídos para o escopo inicial. Os quatro casos de teste foram executados no ciclo de testes do Jira, com resultado geral Passed (100%). A execução contempla os cenários de cadastro e login definidos para fins educacionais; os resultados não devem ser interpretados como validação abrangente de todos os comportamentos possíveis da aplicação.
 
 ## Objetivos
 
