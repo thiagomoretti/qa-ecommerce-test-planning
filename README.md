@@ -1,97 +1,124 @@
-# QA E-commerce — Test Planning
+# Controle de Qualidade em E-commerce — Planejamento e Testes de QA
 
-Projeto de portfólio de QA voltado ao planejamento e à documentação de testes funcionais para um e-commerce. O escopo inicial contempla duas histórias de usuário: cadastro de usuário e login.
+Projeto de portfólio de Quality Assurance (QA) direcionado ao planejamento, documentação e execução de testes funcionais para uma aplicação de e-commerce.
 
-> **Status do projeto:** planejamento e documentação concluídos para o escopo inicial. Os quatro casos de teste foram executados no ciclo de testes do Jira, com resultado geral Passed (100%). A execução contempla os cenários de cadastro e login definidos para fins educacionais; os resultados não devem ser interpretados como validação abrangente de todos os comportamentos possíveis da aplicação.
+O escopo inicial contempla duas histórias de usuário: cadastro de usuário e login.
+
+> **Status do projeto:** planejamento e documentação concluídos para o escopo inicial. Foram elaborados quatro casos de teste, sendo dois casos tradicionais e dois cenários BDD/Gherkin. Os quatro casos foram executados no ciclo de testes do Jira, com resultado geral de 100% de aprovação.
+
+> **Nota sobre a cobertura:** a execução contempla os quatro cenários definidos para fins educacionais. Os resultados não representam uma validação abrangente de todos os comportamentos possíveis da aplicação.
 
 ## Objetivos
 
-- Estruturar histórias de usuário e critérios de aceite.
-- Elaborar um mapa mental para apoiar a análise de testes.
+- Estruturar histórias de usuário e critérios de aceitação.
+- Elaborar mapa mental para apoiar a análise e a cobertura de testes.
 - Documentar casos de teste tradicionais, com passos, dados e resultados esperados.
-- Escrever cenários BDD/Gherkin.
+- Desenvolver cenários BDD utilizando Gherkin.
 - Organizar o ciclo de vida de defeitos e o fluxo de trabalho de QA.
 - Manter rastreabilidade entre histórias, casos de teste e ciclo de testes.
 
-## Escopo atual
+## Escopo do projeto
 
 ### US-01 — Cadastro de usuário
+
+**História de usuário:**
+
 Como visitante do e-commerce, quero criar uma conta informando meus dados pessoais, para que eu possa me identificar e realizar compras na plataforma.
 
-Cobertura planejada:
+**Cobertura planejada:**
+
 - Cadastro com dados válidos.
-- Campos obrigatórios.
+- Validação de campos obrigatórios.
 - Formato do e-mail.
 - E-mail já cadastrado.
 - Confirmação de cadastro.
 - Mensagens de validação.
 
 ### US-02 — Login de usuário
-Como usuário cadastrado, quero acessar minha conta usando e-mail e senha, para visualizar as funcionalidades autenticadas da plataforma.
 
-Cobertura planejada:
+**História de usuário:**
+
+Como usuário cadastrado, quero acessar minha conta utilizando e-mail e senha, para visualizar as funcionalidades autenticadas da plataforma.
+
+**Cobertura planejada:**
+
 - Login com credenciais válidas.
 - Senha incorreta.
 - E-mail sem cadastro correspondente.
-- Campos obrigatórios.
+- Validação de campos obrigatórios.
 - Redirecionamento após autenticação.
 
-Os cenários listados são uma proposta educacional. Antes da execução, os critérios e resultados esperados devem ser comparados com os requisitos e o comportamento da aplicação escolhida.
+Os cenários acima representam o escopo de análise e planejamento. A execução concluída refere-se aos quatro casos efetivamente cadastrados no ciclo de testes.
 
 ## Ferramentas utilizadas
 
-- **Jira:** registro das histórias de usuário e acompanhamento do projeto.
-- **BesTest — Requirement & Test Management for Jira:** cadastro de casos tradicionais e BDD e organização do ciclo de testes.
-- **diagrams.net:** criação do mapa mental.
+- **Jira:** gerenciamento de histórias de usuário, acompanhamento de requisitos e organização do ciclo de testes.
+- **BesTest — Gerenciamento de Requisitos e Testes para Jira:** cadastro e gerenciamento de casos de teste tradicionais e BDD.
+- **diagrams.net:** elaboração do mapa mental.
 - **GitHub:** versionamento e publicação da documentação.
-- **PDF/Markdown:** documentação e compartilhamento dos artefatos.
+- **PDF e Markdown:** documentação e compartilhamento dos artefatos.
 
-## Artefatos
+## Artefatos do projeto
 
 | Artefato | Referência | Descrição |
 |---|---|---|
-| História de cadastro | `KAN-1` | Requisitos propostos para cadastro; o mapa mental em PDF está anexado à história. |
-| História de login | `KAN-2` | Requisitos propostos para login. |
-| Caso tradicional de cadastro | `KAN-TC-1` | Cadastro com dados válidos, descrito passo a passo. |
-| Caso tradicional de login | `KAN-TC-2` | Login com credenciais válidas, descrito passo a passo. |
+| História de cadastro | `KAN-1` | Requisitos de cadastro e mapa mental anexado à história. |
+| História de login | `KAN-2` | Requisitos e critérios de aceitação para autenticação. |
+| Caso tradicional de cadastro | `KAN-TC-1` | Cadastro com dados válidos, documentado passo a passo. |
+| Caso tradicional de login | `KAN-TC-2` | Login com credenciais válidas, documentado passo a passo. |
 | BDD de cadastro | `KAN-TC-3` | Cenário Gherkin de cadastro positivo. |
 | BDD de login | `KAN-TC-4` | Cenário Gherkin de login positivo. |
 | Ciclo de testes | `KAN-CY-1` | Ciclo que agrupa os quatro casos documentados. |
 
 ## Documentação em PDF
 
-Os arquivos estão na pasta `docs/` deste repositório:
+Os documentos estão disponíveis na pasta `docs/` deste repositório:
 
-- `01_Plano_QA_Fluxo_e_Ciclo_de_Vida_de_Bugs.pdf` — fluxo de trabalho de QA, ciclo de vida de defeitos e modelo de registro de bug.
-- `02_Historias_de_Usuario_e_Criterios_de_Aceite.pdf` — histórias, critérios de aceite, regras de negócio e rastreabilidade.
-- `03_Documentacao_de_Testes_Mapa_Mental_Casos_e_BDD.pdf` — mapa mental, dois casos tradicionais, dois cenários BDD e matriz de rastreabilidade.
+1. `01_Plano_QA_Fluxo_e_Ciclo_de_Vida_de_Bugs.pdf`
+   - Fluxo de trabalho de QA.
+   - Ciclo de vida de defeitos.
+   - Modelo de registro de bugs.
 
-## Status da execução
+2. `02_Historias_de_Usuario_e_Criterios_de_Aceite.pdf`
+   - Histórias de usuário.
+   - Critérios de aceitação.
+   - Regras de negócio.
+   - Rastreabilidade.
+
+3. `03_Documentacao_de_Testes_Mapa_Mental_Casos_e_BDD.pdf`
+   - Mapa mental.
+   - Dois casos de teste tradicionais.
+   - Dois cenários BDD.
+   - Matriz de rastreabilidade.
+
+## Resultados da execução
 
 | Item | Status |
 |---|---|
 | Histórias de usuário documentadas | Concluído |
 | Mapa mental da US-01 criado e anexado à história | Concluído |
-| 2 casos tradicionais cadastrados | Concluído |
-| 2 casos BDD cadastrados | Concluído |
-| Ciclo de testes criado com os 4 casos | Concluído |
-| Execução dos testes | **Pendente** |
-| Registro de resultados e evidências reais | **Pendente** |
-| Registro e reteste de defeitos encontrados | **Pendente** |
+| Dois casos tradicionais cadastrados | Concluído |
+| Dois casos BDD cadastrados | Concluído |
+| Ciclo de testes criado com os quatro casos | Concluído |
+| Execução dos quatro casos de teste | Aprovado |
+| Resultado geral do ciclo | **100% de aprovação** |
+| Registro e reteste de defeitos | Não contemplado nos quatro cenários executados |
 
-**Importante:** criar um caso ou adicioná-lo a um ciclo não significa que o teste foi executado. Após a execução, atualizar o status de cada caso e registrar evidências reais. Não marcar casos como aprovados sem comparar o resultado observado com o esperado.
+**Resultado:** os quatro casos de teste definidos para o ciclo `KAN-CY-1` foram executados e aprovados.
+
+A aprovação refere-se exclusivamente aos cenários documentados e executados, não representando cobertura integral das funcionalidades de cadastro e login.
 
 ## Próximas etapas
 
-1. Escolher e acessar a aplicação de e-commerce que será usada para validar os requisitos.
-2. Confirmar os campos, regras e mensagens reais de cadastro e login.
-3. Executar os quatro casos do ciclo `KAN-CY-1`.
-4. Registrar resultado observado, ambiente, data e evidências.
-5. Se houver divergência, abrir defeito com passos para reprodução, resultado esperado, resultado observado e evidências.
-6. Ampliar a cobertura com cenários negativos, especialmente e-mail inválido/duplicado, campos vazios, senha incorreta e e-mail inexistente.
-7. Atualizar esta documentação conforme os resultados obtidos.
+1. Ampliar a cobertura dos testes funcionais.
+2. Executar cenários negativos, incluindo e-mail inválido, e-mail duplicado, campos vazios, senha incorreta e e-mail inexistente.
+3. Validar os critérios de aceitação em uma aplicação de e-commerce identificada.
+4. Registrar resultados obtidos, ambiente, dados utilizados e evidências de execução.
+5. Identificar possíveis divergências entre resultados esperados e obtidos.
+6. Registrar defeitos, quando identificados, incluindo passos para reprodução, resultado esperado, resultado obtido e evidências.
+7. Realizar testes de reteste e regressão após eventuais correções.
 
-## Estrutura sugerida do repositório
+## Estrutura do repositório
 
 ```text
 qa-ecommerce-test-planning/
@@ -104,7 +131,14 @@ qa-ecommerce-test-planning/
 
 ## Observações
 
-Este é um projeto de estudo e portfólio. As histórias e critérios são requisitos propostos para planejamento; não devem ser interpretados como confirmação de funcionalidades de um produto específico. Os resultados só serão registrados após execução efetiva em ambiente identificado.
+Este é um projeto educacional de portfólio em Quality Assurance.
+
+As histórias de usuário e os critérios de aceitação foram elaborados para fins de planejamento e documentação de testes.
+
+Os resultados apresentados correspondem aos quatro casos executados no ciclo de testes do Jira. A ampliação da cobertura e a validação de cenários adicionais fazem parte das próximas etapas do projeto.
 
 ---
-Projeto de portfólio QA | Documentação inicial — versão 1.0
+
+**Projeto de Portfólio QA**  
+Planejamento, documentação e execução de testes funcionais  
+Versão 1.1
